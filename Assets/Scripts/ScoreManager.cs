@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     #region PUBLIC VARIABLES
     public int score;
     public Text scoreText;
+     public int value;
     #endregion
     #region PRIVATE VARIABLES
 
@@ -30,19 +31,20 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         DisplayScore();
-    }
+       
+    }    
 
     #endregion
 
     #region PUBLIC METHODS
-    public void ScoreIncrement(int value)
+    public void ScoreIncrement()
     {
         score += value;
         DisplayScore();
     }
-    public void ScoreDecrement(int value)
+    public void ScoreDecrement()
     {
-        score = Mathf.Clamp(score - value, 0, 100);
+        score--;
         DisplayScore();
     }
     public int GetScore()
@@ -52,6 +54,10 @@ public class ScoreManager : MonoBehaviour
     public void DisplayScore()
     {
         scoreText.text = "Score: " + score.ToString();
+    }
+    public void ChangeValue(int scoreValue)
+    {
+        value = scoreValue;
     }
     #endregion
     #region PRIVATE METHODS

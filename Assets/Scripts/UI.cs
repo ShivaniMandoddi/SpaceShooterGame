@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-[CreateAssetMenu(fileName ="UI",menuName ="UIButtons")]
+[CreateAssetMenu(fileName ="UI",menuName ="ShipData")]
 public class UI : ScriptableObject
 {
     // Start is called before the first frame update
+    public Ships[] shipsData;
+    public int scorePoints;
+    
     void Start()
     {
         
@@ -16,20 +19,14 @@ public class UI : ScriptableObject
     {
         
     }
-    public void ButtonA()
-    {
-        SceneManager.LoadScene("A");
-    }
-    public void ButtonB()
-    {
-        SceneManager.LoadScene("B");
-    }
-    public void ButtonC()
-    {
-        SceneManager.LoadScene("C");
-    }
-    public void ButtonD()
-    {
-        SceneManager.LoadScene("D");
-    }
+   
+}
+[System.Serializable]
+public class Ships
+{
+    public string shipName;
+    public int shippoints;
+    public int shipSpeed;
+    public int upgradepoints;
+    public int upgrades;
 }

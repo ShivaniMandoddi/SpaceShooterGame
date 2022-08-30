@@ -12,3 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3658fc9b4ce77be459c8205fe58d24e3, type: 3}
   m_Name: UI
   m_EditorClassIdentifier: 
+  shipsData:
+  - shipName: Ship1
+    shippoints: 1
+    shipSpeed: 10
+    upgradepoints: 1000
+    upgrades: 5
+  - shipName: Ship2
+    shippoints: 1
+    shipSpeed: 9
+    upgradepoints: 1500
+    upgrades: 5
+  - shipName: Ship3
+    shippoints: 1
+    shipSpeed: 7
+    upgradepoints: 2000
+    upgrades: 5
+  scorePoints: 1000

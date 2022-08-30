@@ -13,7 +13,7 @@ public class BackgroundMovement : MonoBehaviour
     #region MONOBEHAVIOUR METHODS
     void Start()
     {
-
+        
     }
 
     

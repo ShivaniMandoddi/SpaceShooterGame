@@ -33,8 +33,8 @@ public class EnemyMovement : MonoBehaviour
     {
         if(collision.gameObject.layer==8)
         {
-            ScoreManager.Instance.ScoreDecrement(1);
-            this.gameObject.SetActive(false);
+            ScoreManager.Instance.ScoreDecrement();
+            //this.gameObject.SetActive(false);
         }
     }
     private void OnBecameInvisible()

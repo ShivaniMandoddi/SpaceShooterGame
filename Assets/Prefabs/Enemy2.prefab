@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8043136831485887751}
   - component: {fileID: 8043136831485887748}
-  - component: {fileID: 8043136831485887750}
   - component: {fileID: 8043136831485887745}
   - component: {fileID: 8784847190557649075}
   m_Layer: 6
@@ -85,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8043136831485887750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8043136831485887749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46a82850af8c7cc43add07df10d92f8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySpeed: 3
-  bulletSpawnPoint: {fileID: 0}
 --- !u!60 &8043136831485887745
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -116,7 +101,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.6666667, y: 2.6666667}
+    oldSize: {x: 1.3333334, y: 1.3333334}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
